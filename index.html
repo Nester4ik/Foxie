@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxie - інтернет-магазин аніме-товарів</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normolaz.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="index.html" class="navbar-brand">FOXIE</a>
+                    <div class="navbar-wrap">
+                        
+                        <ul class="navbar-menu">
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="#">Про нас</a></li>
+                            <li><a href="#">Відгуки</a></li>
+                        </ul>
+
+                        <a href="#" class="Cart-icon">Кошик</a>
+                        <!-- Cart -->
+                        <div class="cart">
+                            <h2 class="cart-title">Ваш кошик</h2>
+                            <!-- Content -->
+                            <div class="cart-content">
+
+                            </div>
+                            <!-- Total -->
+                            <div class="total">
+                                <div class="total-title">Всього:</div>
+                                <div class="total-price">0 грн.</div>
+                            </div>
+                            <!-- Buy Button -->
+                            <button type="button" class="btn-buy">Замовити</button>
+                            <!-- Cart Close -->
+                            <i class="bx bx-x" id="close-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="carousel">
+                <div class="carousel-container">
+                <div class="mySlides fade"><img src="img/slider1.jpg" alt="Image 1"></div>
+                <div class="mySlides fade"><img src="img/slider2.jpg" alt="Image 2"></div>
+                <div class="mySlides fade"><img src="img/slider3.jpg" alt="Image 3"></div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>      
+            </div>
+
+            <!-- Shop -->
+            <section class="shop container">
+                <h2 class="section-title">Каталог товарів</h2>
+                <!-- Content -->
+                <div class="shop-content">
+                    <!-- Box 1 -->
+                    <div class="product-box">
+                            <img src="img/Photo product/1.jpg" alt="" class="product-img">
+                                <h2 class="product-title">М'яка іграшка Chopper</h2>
+                                <span class="price">550 грн.</span>
+                                <i class="bx bx-shopping-bag add-cart" id="add-icon"></i>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/2.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Картина по номерам Luffy</h2>
+                        <span class="price">350 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/3.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Cвітильник One Piece</h2>
+                        <span class="price">650 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 4 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/4.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Акрилова фігурка Zoro</h2>
+                        <span class="price">250 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 5 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/5.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Фігурка Megumin</h2>
+                        <span class="price">1250 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 6 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/6.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Брелок Nobara </h2>
+                        <span class="price">75 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 7 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/7.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Подушка Rem</h2>
+                        <span class="price">800 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 8 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/8.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Подушка Naruto </h2> 
+                        <span class="price">900 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 9 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/9.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Подушка Yuji</h2> 
+                        <span class="price">850 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 10 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/10.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Маска Tokyo Ghoul</h2> 
+                        <span class="price">155 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 11 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/11.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Рюкзак Tokyo Ghoul</h2> 
+                        <span class="price">955 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 12 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/12.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Гральні карти Tokyo Ghoul</h2> 
+                        <span class="price">175 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 13 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/13.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Світильник Kaneki</h2> 
+                        <span class="price">650 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 14 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/14.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Футболка Tokyo Ghoul</h2> 
+                        <span class="price">435 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 15 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/15.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Карти таро JoJo</h2> 
+                        <span class="price">355 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 16 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/16.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Кепка JoJo</h2> 
+                        <span class="price">245 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 17 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/17.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Акрилова Фігурка JoJo</h2> 
+                        <span class="price">195 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 18 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/18.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Рюкзак JoJo</h2> 
+                        <span class="price">1150 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 19 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/19.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Брелок катана One Piece</h2> 
+                        <span class="price">85 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 20 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/20.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Фігурка Power</h2> 
+                        <span class="price">1475 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+
+                    <!-- Box 21 -->
+                    <div class="product-box">
+                        <img src="img/Photo product/21.jpg" alt="" class="product-img">
+                        <h2 class="product-title">Акрилова фігурка Power</h2> 
+                        <span class="price">220 грн.</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
+                </div>
+            </section> 
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3 class="h3-footer">Контакти</h3>
+                    <p>Номер телефону: +38(068)-431-1513</p>
+                    <p>Адреса: м. Кременчук, вул. Космонавтів, буд. №86</p>
+                </div>
+                <div class="footer-content">
+                    <h3 class="h3-footer">Посилання</h3>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="footer-a">Головна</a></li>
+                        <li><a href="#" class="footer-a">Про нас</a></li>
+                        <li><a href="#" class="footer-a">Відгуки</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3 class="h3-footer">Соцмережі</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" class="footer-a"><i class='bx bxl-facebook-circle'></i></a></li>
+                        <li><a href="#" class="footer-a"><i class='bx bxl-twitter' ></i></a></li>
+                        <li><a href="#" class="footer-a"><i class='bx bxl-instagram' ></i></a></li>
+                        <li><a href="#" class="footer-a"><i class='bx bxl-youtube' ></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 2024 Foxie. Усі права захищені.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
